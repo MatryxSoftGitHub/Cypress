@@ -4,7 +4,10 @@
   "description": "cypress automation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules\\.bin\\cypress run --spec 'cypress\\e2e\\youtube.cy.js'",
+    "headtest": "npm run test -- --headed",
+    "chrometest": "npm run test -- --browser chrome",
+    "runtests": "npm run test --"
   },
   "author": "Nagarjuna Napa",
   "license": "ISC",

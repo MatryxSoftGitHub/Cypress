@@ -70,6 +70,7 @@ class homePage
  Description: This function will click on tab.*/
 
     clickTabs(tabNames,urlWithVideo){
+        cy.wait(5000);
         cy.get(this.tabs).contains(tabNames).click();
         // cy.get(this.tabs).each(($el, index)=>{
         //     const eletext = $el.text();

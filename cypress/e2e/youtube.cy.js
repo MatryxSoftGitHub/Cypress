@@ -10,10 +10,10 @@ describe('youtube spec',()=>{
     cy.visit('https://www.youtube.com/@matryxsofttech6572');
    })
 
-   after(()=>{
-        cy.contains(youTubeData.url).end();
+//    after(()=>{
+//         cy.contains(youTubeData.url).end();
 
-   })
+//    })
 
    it('youTubeTest',()=>{
         const hm =new homePage();
