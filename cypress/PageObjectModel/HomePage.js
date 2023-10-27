@@ -6,7 +6,9 @@ class homePage
     sighIn = "#button > yt-button-shape > .yt-spec-button-shape-next > yt-touch-feedback-shape > .yt-spec-touch-feedback-shape > .yt-spec-touch-feedback-shape__fill"
     subscribed = "ytd-subscribe-button-renderer[class='style-scope ytd-c4-tabbed-header-renderer'] yt-animated-action[class='animated-action__container'] div[class='yt-spec-touch-feedback-shape__fill']"
     subscribedIcon="ytd-menu-service-item-renderer:nth-child(5)"
-    tabs = "tp-yt-paper-tab"
+    //tabs = ".tp-yt-paper-tab"
+
+    tabs = ".yt-tab-group-shape-wiz__tabs"
     playingVideoName = "#above-the-fold > :nth-child(1) > h1.style-scope > .style-scope"
 
  /*Function: subscribeChannel()
@@ -31,7 +33,7 @@ class homePage
                     });
             
             } else {
-                cy.log('Channes is subscribed');
+                cy.log('Channel is subscribed');
             }
             });
     }
@@ -51,15 +53,15 @@ class homePage
             //Checking if the channes is subscribed or not.
             cy.get(this.subscribe).then(($ele) => {
                 if ($ele.length) {
-                    cy.log('Channes is unsubscribed');
+                    cy.log('Channel is unsubscribed');
                 
                 } else {
-                    cy.log('Failed to unsubscribe channes');
+                    cy.log('Failed to unsubscribe channel');
                 }
                 });
         
         } else {
-            cy.log('Channes is unsubscribed');
+            cy.log('Channel is unsubscribed');
         }
         });
 }
