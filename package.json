@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules\\.bin\\cypress run --spec 'cypress\\e2e\\youtube.cy.js'",
+    "alltest": "node_modules\\.bin\\cypress run",
     "headtest": "npm run test -- --headed",
     "chrometest": "npm run test -- --browser chrome",
-    "runtests": "npm run test --"
+    "runtests": "npm run test --",
+    "runalltests": "npm run alltest --"
   },
   "author": "Nagarjuna Napa",
   "license": "ISC",

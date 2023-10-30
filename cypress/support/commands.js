@@ -31,7 +31,7 @@
 //cy Xpath commands.
 ///<reference types="Cypress-xpath" /> 
 
-//Custom Command for clicking on link using lable
+//Custom Command for clicking on link using label
 Cypress.Commands.add('clickLink', (Lable)=>{
     cy.get('a').contains(Lable).click();
     cy.wait(10000)
